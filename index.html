@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_32aa7a9c2ef46118e97b3e8fd51b42ed {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_32aa7a9c2ef46118e97b3e8fd51b42ed" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_32aa7a9c2ef46118e97b3e8fd51b42ed = L.map(
+                "map_32aa7a9c2ef46118e97b3e8fd51b42ed",
+                {
+                    center: [15.3695, 32.5721],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ca8793f8daaff9a50e7662668e334530 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_32aa7a9c2ef46118e97b3e8fd51b42ed);
+        
+    
+            var marker_cluster_8ee9df9271aafaea8fcc005f60485b9c = L.markerClusterGroup(
+                {}
+            );
+            map_32aa7a9c2ef46118e97b3e8fd51b42ed.addLayer(marker_cluster_8ee9df9271aafaea8fcc005f60485b9c);
+        
+    
+            var marker_3b08c6633280ed46c8fca1953044dcb7 = L.marker(
+                [13.4413, 22.4454],
+                {}
+            ).addTo(marker_cluster_8ee9df9271aafaea8fcc005f60485b9c);
+        
+    
+        var popup_e54fd09b8a7b98d32681112c18eceb24 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e87a962d78e3727ed63ebfa6daf4d77e = $(`<div id="html_e87a962d78e3727ed63ebfa6daf4d77e" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #fff; padding: 10px; width: 300px;">             <h6 style="margin: 0; color: #333;">On 26 April 2023, clashes between the Sudanese Armed Forces (SAF) and the Rapid Support Forces (RSF) continued in El Geneina (El Geneina, West Darfur), with reports of arson and looting of markets as well as several humanitarian organizations' premises, and burning of houses. Civilians were killed and displaced by the violence. At least 512 people were killed in clashes since 15 April, and 4193 were injured. 53 unspecified fatalities split across 5 locations. Fatalities coded as 11.</h6>             <p style="margin: 0; color: #777;">Based on the given text, there are reports of burning of houses and looting of markets as well as several humanitarian organizations' premises in El Geneina, West Darfur due to the clashes between the Sudanese Armed Forces (SAF) and the Rapid Support Forces (RSF). However, there is no specific mention of any damaged buildings or infrastructures.</p>         </div>     </div>`)[0];
+                popup_e54fd09b8a7b98d32681112c18eceb24.setContent(html_e87a962d78e3727ed63ebfa6daf4d77e);
+            
+        
+
+        marker_3b08c6633280ed46c8fca1953044dcb7.bindPopup(popup_e54fd09b8a7b98d32681112c18eceb24)
+        ;
+
+        
+    
+    
+            var marker_b5032d18d6f0947004b7790b9e1692f5 = L.marker(
+                [15.6573, 32.4739],
+                {}
+            ).addTo(marker_cluster_8ee9df9271aafaea8fcc005f60485b9c);
+        
+    
+        var popup_afc9824ea964d5bd159b4af88e5c3d26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb3c2b0c264718aa1144321bc7ab1dd2 = $(`<div id="html_fb3c2b0c264718aa1144321bc7ab1dd2" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #fff; padding: 10px; width: 300px;">             <h6 style="margin: 0; color: #333;">On 25 April 2023, clashes between the Sudanese Armed Forces (SAF) and the Rapid Support Forces (RSF) continued in Omdurman (Omdurman, Khartoum). While three sites were hit in the Danubawi neighbourhood, at least 10 people were injured as a result of the fall of rocket launcher shells in Al-Roumi health centers and a house in the seventh neighbourhood in Omdurman. Civilians continued to flee the fighting. At least 459 people were killed in clashes since 15 April, and more than 4000 were injured. 32 unspecified fatalities split across 7 locations. Fatalities coded as 5.</h6>             <p style="margin: 0; color: #777;">Based on the given text, it can be inferred that there were at least three sites that were hit in the Danubawi neighborhood and a rocket launcher shell fell on Al-Roumi health centers and a house in the seventh neighborhood in Omdurman. This resulted in at least 10 people being injured. However, there is no specific mention of any damage to buildings or infrastructure. Therefore, it can be assumed that there is no significant damage to buildings or infrastructure mentioned in the text.</p>         </div>     </div>`)[0];
+                popup_afc9824ea964d5bd159b4af88e5c3d26.setContent(html_fb3c2b0c264718aa1144321bc7ab1dd2);
+            
+        
+
+        marker_b5032d18d6f0947004b7790b9e1692f5.bindPopup(popup_afc9824ea964d5bd159b4af88e5c3d26)
+        ;
+
+        
+    
+    
+            var marker_4e799da0615bd314e03b0c59c63190f3 = L.marker(
+                [13.4413, 22.4454],
+                {}
+            ).addTo(marker_cluster_8ee9df9271aafaea8fcc005f60485b9c);
+        
+    
+        var popup_8199f1a4357d07a58fe5681ceec8b8f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4c55f91a0508c33618d0aabab73013b = $(`<div id="html_f4c55f91a0508c33618d0aabab73013b" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #fff; padding: 10px; width: 300px;">             <h6 style="margin: 0; color: #333;">On 25 April 2023, clashes between the Sudanese Armed Forces (SAF) and the Rapid Support Forces (RSF) continued in El Geneina (El Geneina, West Darfur), with reports of looting of markets as well as several humanitarian organizations' premises, and burning of houses. Dozens of citizens were killed and injured, while others were displaced by the violence. At least 459 people were killed in clashes since 15 April, and more than 4000 were injured. 32 unspecified fatalities split across 7 locations. Fatalities coded as 5.</h6>             <p style="margin: 0; color: #777;">Based on the text, it is mentioned that houses were burned during the clashes between the Sudanese Armed Forces and the Rapid Support Forces in El Geneina, West Darfur. However, there is no specific mention of any other damaged buildings or infrastructures.</p>         </div>     </div>`)[0];
+                popup_8199f1a4357d07a58fe5681ceec8b8f3.setContent(html_f4c55f91a0508c33618d0aabab73013b);
+            
+        
+
+        marker_4e799da0615bd314e03b0c59c63190f3.bindPopup(popup_8199f1a4357d07a58fe5681ceec8b8f3)
+        ;
+
+        
+    
+    
+            var marker_164be8374a69d08431ef7be58bcf57a8 = L.marker(
+                [13.4413, 22.4454],
+                {}
+            ).addTo(marker_cluster_8ee9df9271aafaea8fcc005f60485b9c);
+        
+    
+        var popup_d6d88a31a20bd83189af8f309dabab3e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6777688d503865226e118e2ca001cd0d = $(`<div id="html_6777688d503865226e118e2ca001cd0d" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #fff; padding: 10px; width: 300px;">             <h6 style="margin: 0; color: #333;">On 24 April 2023, armed clashes using heavy and light weapons continued between SAF and RSF with reports of looting and burning of houses as well as displacement in El Geneina town (El Geneina, West Darfur). Clashes were also reported in Eljmark Area in western side of the city and in Eljbl neighbourhood. Amid the clashes hundreds of prisoners escaped from Erdamta prison in the city in mysterious circumstances. RSF members entered the headquarters of the National Intelligence Service and seized weapons amid the clashes. At least 25 people were killed and hundreds were injured.</h6>             <p style="margin: 0; color: #777;">Based on the text, there are reports of looting and burning of houses in El Geneina town as well as clashes in Eljmark Area and Eljbl neighbourhood. However, there is no specific mention of any damaged buildings or infrastructures.</p>         </div>     </div>`)[0];
+                popup_d6d88a31a20bd83189af8f309dabab3e.setContent(html_6777688d503865226e118e2ca001cd0d);
+            
+        
+
+        marker_164be8374a69d08431ef7be58bcf57a8.bindPopup(popup_d6d88a31a20bd83189af8f309dabab3e)
+        ;
+
+        
+    
+    
+            var marker_608ff19f6943537f18b0b6f65c3e7eea = L.marker(
+                [15.5725, 32.5364],
+                {}
+            ).addTo(marker_cluster_8ee9df9271aafaea8fcc005f60485b9c);
+        
+    
+        var popup_740528e8711b3284a354485e35f54a20 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd4dd1bedee23231570716496fcdfe8f = $(`<div id="html_dd4dd1bedee23231570716496fcdfe8f" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #fff; padding: 10px; width: 300px;">             <h6 style="margin: 0; color: #333;">On 23 April 2023, an Iraqi citizen was killed and a staff of the Egyptian embassy was injured in Khartoum (Khartoum) during armed clashes between RSF and SAF. An anti-aircraft missile crashed into a house during the clashes in Khartoum, seriously injuring two Ethiopians. SAF claimed that RSF continued its artillery shelling in areas surrounding the General Command and intercepted the movement of citizens by setting up checkpoints in some areas of the capital and working to spread chaos by storming some prisons and forcing the police to release inmates. About 300 people, including women and children were displaced from Khartoum to Gedaref city, in an attempt to escape the ongoing clashes.</h6>             <p style="margin: 0; color: #777;">According to the text, an anti-aircraft missile crashed into a house during the armed clashes in Khartoum, seriously injuring two Ethiopians. However, there is no further information regarding any damage to buildings or infrastructure.</p>         </div>     </div>`)[0];
+                popup_740528e8711b3284a354485e35f54a20.setContent(html_dd4dd1bedee23231570716496fcdfe8f);
+            
+        
+
+        marker_608ff19f6943537f18b0b6f65c3e7eea.bindPopup(popup_740528e8711b3284a354485e35f54a20)
+        ;
+
+        
+    
+    
+            var marker_927896bb0650a46b952b7e98b7e9eae3 = L.marker(
+                [15.6365, 32.5303],
+                {}
+            ).addTo(marker_cluster_8ee9df9271aafaea8fcc005f60485b9c);
+        
+    
+        var popup_c28e4af2056c49a4b7e82ade59eb0fb3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eeb29076d99176fac0a29aa89925f5c8 = $(`<div id="html_eeb29076d99176fac0a29aa89925f5c8" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #fff; padding: 10px; width: 300px;">             <h6 style="margin: 0; color: #333;">On 22 April 2023, armed clashes between SAF and RSF continued at Bahri, Khartoum North (Khartoum). Different parts of Bahri including Al-Shabiya Bahri area - Shambat Al-Safia - Al-Mazad Street, Al-Inqaz Street - Al-Nass Street - Al-Ma'ona Street witnessed clashes while the central commercial market, residential buildings, and the headquarters of a bank in Khartoum North were burned during the clashes. 5-7 prisoners in 'Cooper' prison died after being hit by projectiles inside their prison. At least 427 people were killed in clashes since 15 April, and 3700 were injured. 14 unspecified fatalities split across eight locations. Fatalities coded as 2.</h6>             <p style="margin: 0; color: #777;">Based on the text, it is reported that the central commercial market, residential buildings, and the headquarters of a bank in Khartoum North were burned during the clashes between SAF and RSF in Bahri, Khartoum North. However, there is no further mention of any other damaged buildings or infrastructures in the text.</p>         </div>     </div>`)[0];
+                popup_c28e4af2056c49a4b7e82ade59eb0fb3.setContent(html_eeb29076d99176fac0a29aa89925f5c8);
+            
+        
+
+        marker_927896bb0650a46b952b7e98b7e9eae3.bindPopup(popup_c28e4af2056c49a4b7e82ade59eb0fb3)
+        ;
+
+        
+    
+    
+            var marker_6c9bcf4f634052c9b5089ad7bf37c8ea = L.marker(
+                [15.6573, 32.4739],
+                {}
+            ).addTo(marker_cluster_8ee9df9271aafaea8fcc005f60485b9c);
+        
+    
+        var popup_000015257f503e73054dc35b448f66bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b34eb5696fb0b02e6d15e8ff4d22ab9 = $(`<div id="html_2b34eb5696fb0b02e6d15e8ff4d22ab9" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #fff; padding: 10px; width: 300px;">             <h6 style="margin: 0; color: #333;">On 22 April 2023, clashes between SAF and RSF continued in Omdurman and its neighbourhoods including Karari, along the Nile near bridges (Omdurman, Khartoum), with airstrikes being reported. SAF carried out several air strikes in West Omdurman, causing a number of buildings to collapse, and dozens of civilians were killed and injured. A shell fell at a women's prison in the city which led to the release of about 580 female prisoners. At least 427 people were killed in clashes since 15 April, and 3700 were injured. 14 unspecified fatalities split across eight locations. Fatalities coded as 2.</h6>             <p style="margin: 0; color: #777;">Based on the text, there are several damaged buildings in Omdurman due to the clashes between SAF and RSF. SAF conducted several air strikes in West Omdurman which caused a number of buildings to collapse. Additionally, a shell fell at a women's prison in the city which led to the release of about 580 female prisoners. However, the text does not provide specific information on any other damaged infrastructures.</p>         </div>     </div>`)[0];
+                popup_000015257f503e73054dc35b448f66bb.setContent(html_2b34eb5696fb0b02e6d15e8ff4d22ab9);
+            
+        
+
+        marker_6c9bcf4f634052c9b5089ad7bf37c8ea.bindPopup(popup_000015257f503e73054dc35b448f66bb)
+        ;
+
+        
+    
+    
+            var marker_50ac674fd3e0076c1c4faa3624785327 = L.marker(
+                [15.5993, 32.5933],
+                {}
+            ).addTo(marker_cluster_8ee9df9271aafaea8fcc005f60485b9c);
+        
+    
+        var popup_21bb5359d411bcca6d882b9cbeb56f46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_461d2b949cf21356a1eb0c7c357af10d = $(`<div id="html_461d2b949cf21356a1eb0c7c357af10d" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #fff; padding: 10px; width: 300px;">             <h6 style="margin: 0; color: #333;">Property destruction: On 20 April 2023, SAF attacked and destroyed the civilian houses in Jurayf (Sharg An Neel, Khartoum), where members of RSF were sheltering.</h6>             <p style="margin: 0; color: #777;">Based on the given text, it can be inferred that there was property destruction in the form of civilian houses being attacked and destroyed in Jurayf (Sharg An Neel, Khartoum) by SAF. However, there is no specific mention of any other buildings or infrastructures being damaged or destroyed.</p>         </div>     </div>`)[0];
+                popup_21bb5359d411bcca6d882b9cbeb56f46.setContent(html_461d2b949cf21356a1eb0c7c357af10d);
+            
+        
+
+        marker_50ac674fd3e0076c1c4faa3624785327.bindPopup(popup_21bb5359d411bcca6d882b9cbeb56f46)
+        ;
+
+        
+    
+    
+            var marker_d75c3e4ac9da644c24625c41eda23ea6 = L.marker(
+                [15.5253, 32.5165],
+                {}
+            ).addTo(marker_cluster_8ee9df9271aafaea8fcc005f60485b9c);
+        
+    
+        var popup_f081f06413cf069c07bf5f54c5b27b9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_69d2de1c3e290f7c813910270c22c719 = $(`<div id="html_69d2de1c3e290f7c813910270c22c719" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #fff; padding: 10px; width: 300px;">             <h6 style="margin: 0; color: #333;">Property destruction: On 20 April 2023, SAF attacked and destroyed the house of the commander of the RSF, Muhammad Hamdan Dagalo, and houses belonging to RSF high-ranking officers in Khartoum - Jabra (Kartoum).</h6>             <p style="margin: 0; color: #777;">Based on the text provided, it is mentioned that the house of the commander of the Rapid Support Forces (RSF), Muhammad Hamdan Dagalo, and houses belonging to RSF high-ranking officers in Khartoum - Jabra were attacked and destroyed by the Sudanese Armed Forces (SAF) on April 20, 2023. Therefore, it can be inferred that there was property destruction in the form of damaged buildings.</p>         </div>     </div>`)[0];
+                popup_f081f06413cf069c07bf5f54c5b27b9d.setContent(html_69d2de1c3e290f7c813910270c22c719);
+            
+        
+
+        marker_d75c3e4ac9da644c24625c41eda23ea6.bindPopup(popup_f081f06413cf069c07bf5f54c5b27b9d)
+        ;
+
+        
+    
+    
+            var marker_5eb68d476b787feddf981703592119d3 = L.marker(
+                [13.1842, 30.2167],
+                {}
+            ).addTo(marker_cluster_8ee9df9271aafaea8fcc005f60485b9c);
+        
+    
+        var popup_db78cd9a5f107f8c4846bcfd406f3d1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e93b1a2f7bc3c854264fabcf7c2500c9 = $(`<div id="html_e93b1a2f7bc3c854264fabcf7c2500c9" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #fff; padding: 10px; width: 300px;">             <h6 style="margin: 0; color: #333;">On 20 April 2023, armed clashes continued between SAF and RSF forces in El Obeid (Sheikan, North Kordofan). RSF also attacked police forces. 20 officers were killed. Four public hospitals were destroyed during armed clashes. At least 330 civilians have been killed since Saturday. 75 unspecified fatalities (civilians and military) split between 7 locations. Fatalities coded as 21.</h6>             <p style="margin: 0; color: #777;">Based on the text provided, it is mentioned that four public hospitals were destroyed during the armed clashes in El Obeid, North Kordofan. However, there is no further information regarding any other damaged buildings or infrastructures.</p>         </div>     </div>`)[0];
+                popup_db78cd9a5f107f8c4846bcfd406f3d1e.setContent(html_e93b1a2f7bc3c854264fabcf7c2500c9);
+            
+        
+
+        marker_5eb68d476b787feddf981703592119d3.bindPopup(popup_db78cd9a5f107f8c4846bcfd406f3d1e)
+        ;
+
+        
+    
+    
+            var marker_c306ef40dd75c125f0807fd119e35ada = L.marker(
+                [13.5157, 24.8653],
+                {}
+            ).addTo(marker_cluster_8ee9df9271aafaea8fcc005f60485b9c);
+        
+    
+        var popup_b0048831b12803bc01d878bf26bbbd66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b32f577e75b03114923ed2c4111b3e7 = $(`<div id="html_1b32f577e75b03114923ed2c4111b3e7" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #fff; padding: 10px; width: 300px;">             <h6 style="margin: 0; color: #333;">Property destruction: On 19 April 2023, Naivasha market was set on fire in Tawila (North Darfur) during continued clashes between SAF and RSF. It is assumed that the fire was started by projectiles fired during clashes nearby.</h6>             <p style="margin: 0; color: #777;">Based on the provided text, there is information about property destruction in Naivasha market in Tawila, North Darfur. The market was set on fire during clashes between SAF and RSF on 19 April 2023. It is assumed that the fire was caused by projectiles fired during the nearby clashes. However, there is no specific mention of any other damaged buildings or infrastructures.</p>         </div>     </div>`)[0];
+                popup_b0048831b12803bc01d878bf26bbbd66.setContent(html_1b32f577e75b03114923ed2c4111b3e7);
+            
+        
+
+        marker_c306ef40dd75c125f0807fd119e35ada.bindPopup(popup_b0048831b12803bc01d878bf26bbbd66)
+        ;
+
+        
+    
+    
+            var marker_0a1750f452dd7a3dc8c2158d6bd961fe = L.marker(
+                [18.4657, 31.8146],
+                {}
+            ).addTo(marker_cluster_8ee9df9271aafaea8fcc005f60485b9c);
+        
+    
+        var popup_9459beddd742677c2547781c123ca966 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac365f3c94cc28bd9819e1e57d592df5 = $(`<div id="html_ac365f3c94cc28bd9819e1e57d592df5" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #fff; padding: 10px; width: 300px;">             <h6 style="margin: 0; color: #333;">On 19 April 2023, armed clashes renewed between SAF and RSF at a military base in Merowe (Northern). SAF claimed to have taken control of the area and arrested the local commander of RSF. Civilian and military aircrafts sustained damages. Casualties unknown.</h6>             <p style="margin: 0; color: #777;">Based on the given text, it is mentioned that civilian and military aircrafts sustained damages during the armed clashes between SAF and RSF at a military base in Merowe. However, there is no specific mention of any other damaged buildings or infrastructures. Therefore, it can be inferred that the damages were limited to the aircrafts only.</p>         </div>     </div>`)[0];
+                popup_9459beddd742677c2547781c123ca966.setContent(html_ac365f3c94cc28bd9819e1e57d592df5);
+            
+        
+
+        marker_0a1750f452dd7a3dc8c2158d6bd961fe.bindPopup(popup_9459beddd742677c2547781c123ca966)
+        ;
+
+        
+    
+    
+            var marker_309ff858167b17f59b7bc82acbb9b5b2 = L.marker(
+                [15.5725, 32.5364],
+                {}
+            ).addTo(marker_cluster_8ee9df9271aafaea8fcc005f60485b9c);
+        
+    
+        var popup_3091ec374c1dba2d814ab0e10eff6293 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10145d692dd1db1382caf4cde67bf4c3 = $(`<div id="html_10145d692dd1db1382caf4cde67bf4c3" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #fff; padding: 10px; width: 300px;">             <h6 style="margin: 0; color: #333;">On 19 April 2023, an armed clash between SAF and RSF continued in Khartoum (Khartoum). The head of the European Union's office for humanitarian aid as a result of the clashes (was found wounded the day before). A few reports mentioned he was killed (unconfirmed). Clashes also took place at Manshiya and Khartoum International Airport. The Pakistani embassy's premises were damaged by bullets from SAF and RSF armed clashes. Many people fled. Three people were killed, and 11 injured.</h6>             <p style="margin: 0; color: #777;">Based on the text, it is mentioned that the Pakistani embassy's premises were damaged by bullets from the armed clashes between SAF and RSF in Khartoum. However, there is no other mention of any damaged buildings or infrastructures.</p>         </div>     </div>`)[0];
+                popup_3091ec374c1dba2d814ab0e10eff6293.setContent(html_10145d692dd1db1382caf4cde67bf4c3);
+            
+        
+
+        marker_309ff858167b17f59b7bc82acbb9b5b2.bindPopup(popup_3091ec374c1dba2d814ab0e10eff6293)
+        ;
+
+        
+    
+    
+            var marker_fab8c85052d2673469d8a4b0b708a418 = L.marker(
+                [15.5725, 32.5364],
+                {}
+            ).addTo(marker_cluster_8ee9df9271aafaea8fcc005f60485b9c);
+        
+    
+        var popup_2e628804d6c99f8c558b84ac4933c856 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa3ebc5ce050a99ee6207e37821ae056 = $(`<div id="html_aa3ebc5ce050a99ee6207e37821ae056" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #fff; padding: 10px; width: 300px;">             <h6 style="margin: 0; color: #333;">On 18 April 2023, RSF and SAF clashed in Khartoum, including at the airport and presidential palace. Bombs destroyed the Nurse's residence at Ibn Sina Specialized Hospital in Al Amarat and Alzaytouna Specialist Hospital, Fadil Hospital and 6 other hospitals in Khartoum (Khartoum). A civilian plane parked on the airport floor was damaged. SAF forces are accused of attacking 5 ambulances and preventing other medical aid vehicles from transporting patients and delivering aid at an unspecified place in Khartoum location. Thousands of people are without water and medical care. Three people were killed, and 11 injured. At least 220 people (civilians and soldiers) were killed.</h6>             <p style="margin: 0; color: #777;">Based on the given text, several buildings and infrastructures have been damaged due to the clashes between RSF and SAF in Khartoum on 18 April 2023. The Nurse's residence at Ibn Sina Specialized Hospital in Al Amarat and Alzaytouna Specialist Hospital, Fadil Hospital, and 6 other hospitals in Khartoum were destroyed by bombs. Additionally, a civilian plane parked on the airport floor was also reported to be damaged. However,</p>         </div>     </div>`)[0];
+                popup_2e628804d6c99f8c558b84ac4933c856.setContent(html_aa3ebc5ce050a99ee6207e37821ae056);
+            
+        
+
+        marker_fab8c85052d2673469d8a4b0b708a418.bindPopup(popup_2e628804d6c99f8c558b84ac4933c856)
+        ;
+
+        
+    
+</script>
+</html>
